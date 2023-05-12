@@ -1,10 +1,14 @@
-.app-header-constainer {
+.app-header-container {
   background-color: lightblue;
 
   .app-header {
-    .header-link{
-        margin-right:  1rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+    .header-link {
+      margin-right: 1rem;
     }
+
     .active {
       color: green;
     }
