@@ -2,7 +2,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import './assets/styles/style.scss'
 import { Home } from './pages/Home'
 import { Login } from './pages/Login'
-
+import { EmailDetails } from './cmps/EmailDetails'
 import { AppHeader } from './cmps/AppHeader'
 import { AppFooter } from './cmps/AppFooter'
 
@@ -13,11 +13,11 @@ export function App() {
         <AppHeader />
         <div className='main-container'>
           <div className='main container'>
-            <Home />
-            {/* <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/login' element={<Login />} />
-            </Routes> */}
+            <Routes>
+              <Route path='/' element={<Home />}></Route>
+              <Route path='/email/:id' element={<EmailDetails />}></Route>
+            </Routes>
+
           </div>
         </div>
         <AppFooter />

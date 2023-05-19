@@ -1,5 +1,6 @@
 export const utilService = {
-    getNavLinks
+    getNavLinks,
+    makeId 
 }
 
 function getNavLinks() {
@@ -10,4 +11,12 @@ function getNavLinks() {
         { name: 'Sent', img: 'https://res.cloudinary.com/dynulj6f2/image/upload/v1683917797/send_baseline_nv700_20dp_qorq3g.png' },
         { name: 'Drafts', img: 'https://res.cloudinary.com/dynulj6f2/image/upload/v1683917789/draft_baseline_nv700_20dp_ekjz4q.png' }
     ]
+}
+function makeId(length = 5) {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    for (var i = 0; i < length; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return text;
 }
