@@ -1,0 +1,12 @@
+.email-preivew{
+    // background-color: cadetblue;
+    display: grid;
+    grid-template-columns:0.3fr 0.3fr 1.5fr 1.5fr 10fr 3fr;
+    margin-bottom: 5px;
+    padding: 0.3rem;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+
+    }
+}

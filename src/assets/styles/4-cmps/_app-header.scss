@@ -4,6 +4,7 @@
   .app-header {
     display: grid;
     grid-template-columns: 15% 85%;
+    gap: 2.5rem;
 
     .header-link {
       margin-right: 1rem;

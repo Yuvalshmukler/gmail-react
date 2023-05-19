@@ -1,4 +1,5 @@
 .home-page{
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% auto;
+    gap: 2.5rem;
 }
